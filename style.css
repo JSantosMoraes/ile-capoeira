@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+body {
+    background-color: #151515;
+    min-height: 2000px;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 1em;
+}
+
+div#info {
+    display: flex;
+    position: fixed;
+    transform: translate(50%, 0%);
+    right: 50vw;
+    bottom: 1%;
+    opacity: 0.2;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+
+div#info > img {
+    width: 70px;
+    display: inline-block;
+}
+
+div#info > p {
+    padding: 10px 10px;
+    display: inline-block;
+    color: white;
+    font-size: 0.8em;
+}
+
+header {
+    background-color: #151515;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #ADADAD 0px 2px 40px;
+}
+
+header > img#escudo {
+    display: block ;
+    width: 90px;
+    margin: auto 1%;
+    transform: translate(0px, 20px);
+}
+
+img#escudo:hover{
+    cursor: pointer;
+}
+
+header > img.outrosheader {
+    transition: opacity .5s ease-out, transform 1s ease-out;
+    transform: translateY(20px);
+    margin: auto 10px;
+    width: 60px;
+    filter: grayscale(100%);
+    opacity: 0;
+}
+
+header > img.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header > img.hide {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+div#inib {
+    background-image: url('imagens/CelularWallpaper.png');
+    background-position: center bottom;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+div#inib > nav.off {
+    display: none;
+    background-color: white;
+    width: 50vw;
+    height: max-content;
+    padding-bottom: 10px;
+}
+
+div#inib > nav {
+    transition: opacity .5s ease-out, transform 1s ease-out;
+    background-color: white;
+    display: block;
+    width: 50vw;
+    height: max-content;
+    padding-bottom: 10px;
+    box-shadow: #ADADAD 0px 10px 30px;
+}
+
+div#inib > nav > .adomenu {
+    display: block;
+    color: #151515;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+
+div#inib > nav#inav > .adomenu:active {
+    color: white;
+    background-color: #151515;
+    transition: .2s ease-in-out;
+}
+
+/* Animação para exibir o nav */
+.slide-in-left {
+    animation: slideInLeft 0.2s ease-out forwards;
+}
+
+/* Animação para esconder o nav */
+.slide-out-left {
+    animation: slideOutLeft 0.2s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
