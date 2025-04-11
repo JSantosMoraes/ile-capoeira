@@ -20,30 +20,6 @@ h1 {
     font-size: 1em;
 }
 
-div#info {
-    display: flex;
-    position: fixed;
-    transform: translate(50%, 0%);
-    right: 50vw;
-    bottom: 1%;
-    opacity: 0.2;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-}
-
-div#info > img {
-    width: 70px;
-    display: inline-block;
-}
-
-div#info > p {
-    padding: 10px 10px;
-    display: inline-block;
-    color: white;
-    font-size: 0.8em;
-}
-
 header {
     background-color: #151515;
     width: 100vw;

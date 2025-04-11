@@ -1,5 +1,3 @@
-// 30% IA
-
 const imagens = document.querySelectorAll('.outrosheader');
 
 const observer = new IntersectionObserver(entries => {
