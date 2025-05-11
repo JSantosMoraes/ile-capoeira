@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #151515;
+    background-color: white;
     min-height: 2000px;
     overflow-x: hidden;
 }
@@ -21,33 +21,40 @@ h1 {
 }
 
 header {
-    background-color: #151515;
+    background-color: white;
     width: 100vw;
     height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    box-shadow: #ADADAD 0px 2px 40px;
 }
 
-header > img#escudo {
+header > img#logoile {
     display: block ;
     width: 90px;
     margin: auto 1%;
-    transform: translate(0px, 20px);
+    margin-left: 2%;
 }
 
-img#escudo:hover{
+img#logoile:hover{
     cursor: pointer;
 }
 
 header > img.outrosheader {
     transition: opacity .5s ease-out, transform 1s ease-out;
-    transform: translateY(20px);
-    margin: auto 10px;
-    width: 60px;
-    filter: grayscale(100%);
+    margin: auto 5px;
+    width: 80px;
     opacity: 0;
+}
+
+.material-symbols-outlined {
+    background-color: #E67A15;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    border-radius: 2px;
 }
 
 header > img.show {
@@ -61,8 +68,9 @@ header > img.hide {
 }
 
 div#inib {
-    background-image: url('imagens/CelularWallpaper.png');
-    background-position: center bottom;
+    position: relative;
+    background-image: url('imagens/mestres.jpg');
+    background-position: center center;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -83,23 +91,31 @@ div#inib > nav {
     width: 50vw;
     height: max-content;
     padding-bottom: 10px;
-    box-shadow: #ADADAD 0px 10px 30px;
+}
+
+img#logoile2 {
+    width: 90px;
+    margin: 10px auto;
+    display: block;
+    padding: 10px;
+}
+
+div#inib > nav > hr {
+    width: 80%;
+    margin: 10px auto;
 }
 
 div#inib > nav > .adomenu {
     display: block;
-    color: #151515;
+    color: #E67A15;
     text-decoration: none;
     font-weight: 700;
+    font-size: 17px;
     text-transform: uppercase;
     padding: 15px;
-}
-
-
-div#inib > nav#inav > .adomenu:active {
-    color: white;
-    background-color: #151515;
-    transition: .2s ease-in-out;
+    width: 120px;
+    margin: auto;
+    text-align: center;
 }
 
 /* Animação para exibir o nav */
@@ -115,21 +131,21 @@ div#inib > nav#inav > .adomenu:active {
 @keyframes slideInLeft {
     from {
         opacity: 0;
-        transform: translateX(-100%);
+        transform: translateY(-100%);
     }
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(-20%);
     }
 }
 
 @keyframes slideOutLeft {
     from {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(-20%);
     }
     to {
         opacity: 0;
-        transform: translateX(-100%);
+        transform: translateY(-100%);
     }
 }
