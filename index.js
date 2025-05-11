@@ -16,7 +16,7 @@ const observer = new IntersectionObserver(entries => {
 
 imagens.forEach(img => observer.observe(img));
 
-const escudo = document.getElementById('logoile');
+const escudo = document.getElementById('buttonmenu');
 const inav = document.getElementById('inav');
 
 escudo.addEventListener('click', () => {

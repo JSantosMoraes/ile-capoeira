@@ -27,6 +27,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 
 header > img#logoile {
@@ -53,8 +54,16 @@ header > img.outrosheader {
     height: 50px;
     display: flex;
     text-align: center;
+    align-items: center;
     align-content: center;
     border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 }
 
 header > img.show {
@@ -91,6 +100,10 @@ div#inib > nav {
     width: 50vw;
     height: max-content;
     padding-bottom: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 img#logoile2 {
