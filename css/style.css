@@ -21,13 +21,6 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
-    color: white;
-    text-align: center;
-    padding: 30px;
-    font-size: 1em;
-}
-
 header {
     background-color: transparent;
     width: 100vw;
@@ -40,13 +33,35 @@ header {
 
 header > img#logoile {
     display: block ;
-    width: 90px;
+    width: 18%;
     margin-top: 0%;
-    margin-left: 3%;
+    margin-left: 5%;
 }
 
 img#logoile:hover{
     cursor: pointer;
+}
+
+#ile-capoeira-titulo {
+    color: white;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#ile-capoeira-titulo > h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    font-family: 'Bitter';
+}
+
+#ile-capoeira-titulo > h2 {
+    color: white;
+    text-align: center;
+    padding: 0px;
+    font-size: 0.9em;
+    font-family: 'Bitter';
 }
 
 header > img.outrosheader {
@@ -58,8 +73,8 @@ header > img.outrosheader {
 
 .material-symbols-outlined {
     background-color: #E67A15;
-    width: 50px;
-    height: 50px;
+    width: 11vw;
+    height: 11vw;
     display: flex;
     text-align: center;
     align-items: center;
@@ -67,7 +82,7 @@ header > img.outrosheader {
     border-radius: 2px;
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 20px;
     transform: translateY(-50%);
     color: white;
     font-size: 35px;
@@ -110,8 +125,9 @@ div#inib > nav {
     padding-bottom: 80px;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1000;
+    transform: translateX(100%); /* começa fora da tela */
 }
 
 img#logoile2 {
@@ -133,39 +149,39 @@ div#inib > nav > .adomenu {
     font-weight: 800;
     font-size: 17px;
     text-transform: uppercase;
-    padding: 15px 15px 15px 35px;
+    padding: 10px 15px 15px 20px;
     width: 150px;
     text-align: left;
 }
 
-/* Animação para exibir o nav */
-.slide-in-left {
-    animation: slideInLeft 0.2s ease-out forwards;
+/* Abrir da direita para a esquerda */
+.slide-in-right {
+    animation: slideInRight .3s ease-out forwards;
 }
 
-/* Animação para esconder o nav */
-.slide-out-left {
-    animation: slideOutLeft 0.2s ease-out forwards;
+/* Fechar da direita para a esquerda */
+.slide-out-right {
+    animation: slideOutRight .3s ease-out forwards;
 }
 
-@keyframes slideInLeft {
+@keyframes slideInRight {
     from {
+        transform: translateX(100%);
         opacity: 0;
-        transform: translateY(-100%);
     }
     to {
+        transform: translateX(0%);
         opacity: 1;
-        transform: translateY(0%);
     }
 }
 
-@keyframes slideOutLeft {
+@keyframes slideOutRight {
     from {
+        transform: translateX(0%);
         opacity: 1;
-        transform: translateY(0%);
     }
     to {
+        transform: translateX(100%);
         opacity: 0;
-        transform: translateY(-100%);
     }
 }

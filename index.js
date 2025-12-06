@@ -16,18 +16,42 @@ const observer = new IntersectionObserver(entries => {
 
 imagens.forEach(img => observer.observe(img));
 
+
+// ===============================
+// MENU HAMBÚRGUER (ATUALIZADO)
+// ===============================
+
 const escudo = document.getElementById('buttonmenu');
 const inav = document.getElementById('inav');
 
 escudo.addEventListener('click', () => {
     if (inav.classList.contains('off')) {
+        // ABRIR — Animação da direita para a esquerda
         inav.classList.remove('off');
-        inav.classList.add('slide-in-left');
+        inav.classList.add('slide-in-right');
     } else {
-        inav.classList.add('slide-out-left');
+        // FECHAR — Animação saindo pela direita
+        inav.classList.add('slide-out-right');
         setTimeout(() => {
-            inav.classList.remove('slide-out-left');
+            inav.classList.remove('slide-out-right');
             inav.classList.add('off');
-        }, 200); // tempo correspondente à duração da animação
+        }, 300);
+    }
+});
+
+
+// ===========================================
+// FECHAR O MENU AO CLICAR FORA DO NAV
+// ===========================================
+document.addEventListener('click', (event) => {
+    const isClickInsideNav = inav.contains(event.target);
+    const isClickMenuButton = escudo.contains(event.target);
+
+    if (!isClickInsideNav && !isClickMenuButton && !inav.classList.contains('off')) {
+        inav.classList.add('slide-out-right');
+        setTimeout(() => {
+            inav.classList.remove('slide-out-right');
+            inav.classList.add('off');
+        }, 300);
     }
 });
