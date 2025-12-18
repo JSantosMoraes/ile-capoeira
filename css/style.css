@@ -1,3 +1,7 @@
+/* =========================================================
+   FONTES PERSONALIZADAS
+   ========================================================= */
+
 @font-face {
     font-family: 'RedHatDisplay';
     src: url('../assets/fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf');
@@ -7,6 +11,10 @@
     font-family: 'Bitter';
     src: url('../assets/fonts/Bitter/Bitter-VariableFont_wght.ttf');
 }
+
+/* =========================================================
+   RESET E CONFIGURAÇÕES GLOBAIS
+   ========================================================= */
 
 * {
     padding: 0;
@@ -21,7 +29,28 @@ body {
     overflow-x: hidden;
 }
 
-/* CSS DO HEADER START */
+/* =========================================================
+   HERO SECTION / TELA INICIAL (#inib)
+   ========================================================= */
+
+div#inib {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url('../assets/images/mestres.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* =========================================================
+   HEADER PRINCIPAL
+   ========================================================= */
 
 header {
     background-color: transparent;
@@ -33,16 +62,33 @@ header {
     position: relative;
 }
 
+/* Logo principal do header */
+
+header > img#logoile {
+    display: block;
+    width: 15%;
+    margin-top: 0%;
+    margin-left: 5%;
+}
+
+img#logoile:hover {
+    cursor: pointer;
+}
+
+/* =========================================================
+   INFORMAÇÕES DE CONTATO (HEADER)
+   ========================================================= */
+
 header > div#contato-header {
     position: absolute;
     top: 50%;
-    left: 52%;
-    font-weight: 100;
+    left: 50%;
     transform: translate(-50%, -50%);
     margin: auto;
     color: white;
     text-align: center;
     font-size: 0.65em;
+    font-weight: 100;
 }
 
 .contato-numero {
@@ -53,24 +99,15 @@ header > div#contato-header {
 }
 
 .whatsapp-icon {
-  color: #ffffff;
-  font-size: 15px;
-  width: 15px;
-  display: block;
+    color: #ffffff;
+    font-size: 15px;
+    width: 15px;
+    display: block;
 }
 
-header > img#logoile {
-    display: block ;
-    width: 15%;
-    margin-top: 0%;
-    margin-left: 5%;
-}
-
-/* CSS DO HEADER END */
-
-img#logoile:hover{
-    cursor: pointer;
-}
+/* =========================================================
+   TÍTULO PRINCIPAL DA HERO SECTION
+   ========================================================= */
 
 #ile-capoeira-titulo {
     color: white;
@@ -94,12 +131,30 @@ img#logoile:hover{
     font-family: 'Bitter';
 }
 
+/* =========================================================
+   ELEMENTOS AUXILIARES DO HEADER (IMAGENS)
+   ========================================================= */
+
 header > img.outrosheader {
     transition: opacity .5s ease-out, transform 1s ease-out;
     margin: auto 5px;
     width: 80px;
     opacity: 0;
 }
+
+header > img.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header > img.hide {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* =========================================================
+   BOTÃO MENU (HAMBÚRGUER)
+   ========================================================= */
 
 .material-symbols-outlined {
     background-color: #E67A15;
@@ -119,31 +174,23 @@ header > img.outrosheader {
     cursor: pointer;
 }
 
-header > img.show {
-    opacity: 1;
-    transform: translateY(0);
-}
+/* =========================================================
+   MENU LATERAL (NAV)
+   ========================================================= */
 
-header > img.hide {
-    opacity: 0;
-    transform: translateY(50px);
-}
-
-div#inib {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-
-    background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.6)
-        ),
-        url('../assets/images/mestres.jpg');
-
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+div#inib > nav {
+    transition: opacity .5s ease-out, transform 1s ease-out;
+    background-color: white;
+    border-radius: 0px 0px 0px 10px;
+    display: block;
+    width: 45vw;
+    height: max-content;
+    padding-bottom: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    transform: translateX(100%);
 }
 
 div#inib > nav.off {
@@ -154,19 +201,7 @@ div#inib > nav.off {
     padding-bottom: 10px;
 }
 
-div#inib > nav {
-    transition: opacity .5s ease-out, transform 1s ease-out;
-    background-color: white;
-    display: block;
-    width: 45vw;
-    height: max-content;
-    padding-bottom: 80px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    transform: translateX(100%); /* começa fora da tela */
-}
+/* Logo interno do menu */
 
 img#logoile2 {
     width: 90px;
@@ -175,10 +210,14 @@ img#logoile2 {
     padding: 10px;
 }
 
+/* Separador do menu */
+
 div#inib > nav > hr {
     width: 75%;
     margin: 10px auto;
 }
+
+/* Links do menu */
 
 div#inib > nav > .adomenu {
     display: block;
@@ -192,12 +231,14 @@ div#inib > nav > .adomenu {
     text-align: left;
 }
 
-/* Abrir da direita para a esquerda */
+/* =========================================================
+   ANIMAÇÕES DO MENU LATERAL
+   ========================================================= */
+
 .slide-in-right {
     animation: slideInRight .3s ease-out forwards;
 }
 
-/* Fechar da direita para a esquerda */
 .slide-out-right {
     animation: slideOutRight .3s ease-out forwards;
 }
@@ -223,5 +264,3 @@ div#inib > nav > .adomenu {
         opacity: 0;
     }
 }
-
-/* ^^^ CSS DA TELA INICIAL ^^^ */
