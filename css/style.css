@@ -23,6 +23,14 @@
     font-weight: 600;
 }
 
+hr {
+    border: none;
+    height: 3px;
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+}
+
 body {
     background-color: white;
     min-height: 2000px;
@@ -66,9 +74,13 @@ header {
 
 header > img#logoile {
     display: block;
-    width: 15%;
-    margin-top: 0%;
+
+    width: clamp(50px, 15vw, 100px);
+    height: clamp(50px, 15vw, 100px);
+
+    margin-top: 6%;
     margin-left: 5%;
+    margin-right: 1vw;
 }
 
 img#logoile:hover {
@@ -83,11 +95,11 @@ header > div#contato-header {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     margin: auto;
     color: white;
     text-align: center;
-    font-size: 0.65em;
+    font-size: clamp(0.65rem, 1.2vw, 1rem); /* <<<<<<<<<<<<<<<< */
     font-weight: 100;
 }
 
@@ -153,13 +165,35 @@ header > img.hide {
 }
 
 /* =========================================================
+   NAVEGAÇÃO PC (NAV-PC)
+   ========================================================= */
+
+   nav#nav-pc {
+    display: none;
+    margin-top: 7%;
+    text-align: center;
+   }
+
+   nav#nav-pc > a.adomenu-pc {
+    font-family: 'Bitter';
+    color: white;
+    text-decoration: none;
+    margin: 1vw;
+    padding: 10px;
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    
+   }
+
+/* =========================================================
    BOTÃO MENU (HAMBÚRGUER)
    ========================================================= */
 
 .material-symbols-outlined {
     background-color: #E67A15;
-    width: 10vw;
-    height: 10vw;
+    
+    width: clamp(40px, 10vw, 70px);
+    height: clamp(40px, 10vw, 70px);
+
     display: flex;
     text-align: center;
     align-items: center;
@@ -167,7 +201,7 @@ header > img.hide {
     border-radius: 2px;
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 25px;
     transform: translateY(-50%);
     color: white;
     font-size: 35px;
@@ -263,4 +297,43 @@ div#inib > nav > .adomenu {
         transform: translateX(100%);
         opacity: 0;
     }
+}
+
+/* =====================
+   HERO SECTION (Desktop)
+===================== */
+
+@media screen and (min-width: 992px) {
+    #buttonmenu {
+        display: none;
+    }
+
+    nav#nav-pc {
+        display: block;
+    }
+
+    header > div#contato-header {
+        top: 20%;
+    }
+
+    #ile-capoeira-titulo {
+    color: white;
+    text-align: center;
+    margin: 4vw auto;
+}
+
+#ile-capoeira-titulo > h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: clamp(1rem, 4vw, 5vw); /* <<<<<<<<<<<<<<<< */
+    font-family: 'Bitter';
+}
+
+header > img#logoile {
+    margin-left: 0%;
+}
+header {
+    justify-content: center;
+}
 }
