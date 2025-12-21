@@ -324,6 +324,140 @@ section#CECDIC > p {
     line-height: 1.5;
 }
 
+/* =====================
+   SECTION DE AÇÕES REALIZADAS - (TEXTO + IMAGEM)
+===================== */
+
+#acoes-realizadas {
+    max-width: 99vw;
+}
+
+.section-texto > .titulo-esquerda {
+    font-size: clamp(1.4rem, 3.2vw, 1.9rem);
+    margin-left: 4vw;
+    margin-top: 7vw;
+    margin-bottom: 2vw;
+    font-family: 'bitter';
+    color: #E67A15;
+}
+
+.section-texto > .div-texto-esquerda {
+    display: flex;
+    align-items: center;
+    min-height: clamp(100px, 27vh, 300px);
+}
+
+.section-texto > .div-texto-esquerda > img {
+    width: 45vw;
+    aspect-ratio: 1 / 1;   /* força formato quadrado */
+    object-fit: cover;    /* evita deformar a imagem */
+    border-radius: 2px;
+    margin-left: 4vw;
+}
+
+
+.section-texto > .div-texto-esquerda > p {
+    width: 36%;
+    margin: auto;
+    font-size: clamp(0.8rem, 2.5vw, 1.6rem);
+    color: white;
+    text-align: left;
+    line-height: 1.5;
+    color: #E67A15;
+    font-weight: 700;
+}
+
+.texto-veratividades {
+    width: 90vw;
+    margin: 4vw;
+
+    background-image:
+        linear-gradient(
+            rgba(230, 122, 21, 0.8),
+            rgba(230, 122, 21, 0.8)
+        ),
+        url('../assets/images/ilereal.png');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    aspect-ratio: 1 / 0.4;
+    border-radius: 3px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.texto-veratividades > p {
+    width: 50%;
+    margin: 4vw;
+    font-size: clamp(0.7rem, 2.4vw, 1.5rem);
+    color: white;
+    text-align: left;
+    color: white;
+    font-weight: 700;
+}
+
+.texto-veratividades > a {
+    margin-top: 25%;
+    color: #E67A15;
+    background-color: white;
+    text-decoration: none;
+    width: 30%;
+    height: 10%;
+    font-size: clamp(0.6rem, 2.3vw, 1.4rem);
+    padding: 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: ease-in-out .1s;
+}
+
+.texto-veratividades > a:hover {
+    background-color: #E67A15;
+    color: white;
+}
+
+.section-texto > .titulo-direita {
+    font-size: clamp(1.4rem, 3.2vw, 1.9rem);
+    margin-right: 4vw;
+    margin-top: 4vw;
+    margin-bottom: 3vw;
+    font-family: 'bitter';
+    color: #E67A15;
+}
+
+.section-texto > .div-texto-direita {
+    display: flex;
+    align-items: center;
+    min-height: clamp(100px, 27vh, 300px);
+}
+
+.section-texto > .div-texto-direita > img {
+    width: 45vw;
+    aspect-ratio: 1 / 1;   /* força formato quadrado */
+    object-fit: cover;    /* evita deformar a imagem */
+    border-radius: 2px;
+    margin-right: 5vw;
+}
+
+
+.section-texto > .div-texto-direita > p {
+    width: 36%;
+    margin: auto;
+    font-size: clamp(0.8rem, 2.5vw, 1.6rem);
+    color: white;
+    text-align: left;
+    line-height: 1.5;
+    color: #E67A15;
+    font-weight: 700;
+}
+
 /* =========================================================
    ANIMAÇÕES DO MENU LATERAL
    ========================================================= */
@@ -405,4 +539,28 @@ header {
 }
 
     
+}
+
+/* =====================
+   SECTION DE AÇÕES REALIZADAS - (TEXTO + IMAGEM -> ESQUERDA) (DESKTOP)
+===================== */
+
+@media screen and (min-width: 992px){
+    
+.section-esquerda > .titulo-esquerda {
+    font-size: clamp(2rem, 3.6vw, 2.4rem);
+}
+
+.section-esquerda > .div-texto-esquerda > img {
+    width: 50vw;
+    aspect-ratio: 1 / 0.6;   /* força formato quadrado */
+    object-fit: cover;    /* evita deformar a imagem */
+    border-radius: 2px;
+    margin-left: 4vw;
+}
+
+.section-esquerda > .div-texto-esquerda > p {
+    width: 36%;
+    font-size: clamp(0.6rem, 2.3vw, 1.4rem);
+}
 }
