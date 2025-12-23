@@ -265,7 +265,7 @@ div#inib > nav > .adomenu {
     text-align: left;
 }
 
-section#CECDIC {
+section.CECDIC {
     background-image:
         linear-gradient(
             rgba(230, 122, 21, 0.8),
@@ -275,7 +275,7 @@ section#CECDIC {
 
     background-color: #E67A15;
     background-repeat: no-repeat;
-    background-position: 65vw center;
+    background-position: 68vw center;
     background-size: auto 170%;
 
     color: white;
@@ -291,17 +291,17 @@ section#CECDIC {
     align-items: center;     /* horizontal */
 }
 
-section#CECDIC > div {
+section.CECDIC > div {
     display: flex;
     justify-content: center;
 }
 
-section#CECDIC > div > h1 > img {
+section.CECDIC > div > h1 > img {
     width: clamp(80px, 13vw, 90px);
     height: clamp(80px, 13vw, 90px);
 }
 
-section#CECDIC > div > h1 {
+section.CECDIC > div > h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,7 +315,7 @@ section#CECDIC > div > h1 {
     text-align: center;
 }
 
-section#CECDIC > p {
+section.CECDIC > p {
     width: 100%;
     margin-top: 15px;
 
@@ -333,7 +333,7 @@ section#CECDIC > p {
 }
 
 .section-texto > .titulo-esquerda {
-    font-size: clamp(1.4rem, 3.2vw, 1.9rem);
+    font-size: clamp(1.4rem, 3.2vw, 2.3rem);
     margin-left: 4vw;
     margin-top: 7vw;
     margin-bottom: 2vw;
@@ -369,7 +369,7 @@ section#CECDIC > p {
 
 .texto-veratividades {
     width: 90vw;
-    margin: 4vw;
+    margin: 3vw 4vw; /* distancia entre os elementos */
 
     background-image:
         linear-gradient(
@@ -459,6 +459,80 @@ section#CECDIC > p {
 }
 
 /* =========================================================
+    FALE CONOSCO
+   ========================================================= */
+
+    section.fale-conosco {
+            background-image:
+        linear-gradient(
+            rgba(230, 122, 21, 0.8),
+            rgba(230, 122, 21, 0.8)
+        ),
+        url('../assets/images/ilebranco.png');
+
+    background-color: #E67A15;
+    background-repeat: no-repeat;
+    background-position: 68vw center;
+    background-size: auto 170%;
+
+    color: white;
+    width: 100%;
+    margin: 4vw 0vw;
+
+    /* ALTURA MAIS ESTÁVEL */
+    min-height: clamp(150px, 29vh, 350px);
+
+   }
+
+    /* container principal */
+    .fale-conosco {
+        padding: 0vw;
+    }
+
+    .fale-conosco > div.fale-conosco-titulos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* título */
+    .fale-conosco > div.fale-conosco-titulos > h1 {
+        font-family: 'Bitter', serif;
+        font-size: clamp(1.8rem, 3.6vw, 2.3rem);
+        padding: 4vw;
+        width: fit-content;
+    }
+
+    .fale-conosco > div.fale-conosco-titulos > p {
+        font-size: clamp(0.7rem, 1.9vw, 1.2rem);
+        padding: 4vw;
+        width: fit-content;
+    }
+
+    /* GRID DE CONTATOS (AQUI estava o problema antes) */
+    .div-lista-contatos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* itens */
+    .contato-item {
+        display: flex;
+        width: fit-content;
+        margin: 0vw 0vw 4vw 4vw;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        font-size: clamp(1rem, 2.8vw, 1.5rem);
+    }
+
+    /* ícones */
+    .contato-icon {
+        color: #fff;
+        font-size: clamp(1rem, 30px, 3rem);
+    }
+
+
+/* =========================================================
    ANIMAÇÕES DO MENU LATERAL
    ========================================================= */
 
@@ -530,11 +604,11 @@ header {
     justify-content: center;
 }
 
-    section#CECDIC {
+    section.CECDIC {
         min-height: clamp(220px, 30vh, 520px);
     }
 
-    section#CECDIC > p {
+    section.CECDIC > p {
     font-size: clamp(0.8rem, 1.7vw, 1.1rem);
 }
 
@@ -564,3 +638,73 @@ header {
     font-size: clamp(0.6rem, 2.3vw, 1.4rem);
 }
 }
+
+/* =========================================================
+    FALE CONOSCO (DESKTOP)
+   ========================================================= */
+
+   @media screen and (min-width: 992px){
+
+        section.fale-conosco {
+            background-image:
+        linear-gradient(
+            rgba(230, 122, 21, 0.8),
+            rgba(230, 122, 21, 0.8)
+        ),
+        url('../assets/images/ilebranco.png');
+
+    background-color: #E67A15;
+    background-repeat: no-repeat;
+    background-position: 68vw center;
+    background-size: auto 170%;
+
+    color: white;
+    width: 100%;
+    margin: 4vw 0vw;
+
+    /* ALTURA MAIS ESTÁVEL */
+    min-height: clamp(150px, 30vh, 380px);
+
+   }
+
+    /* container principal */
+    .fale-conosco {
+        padding: 1vw 0vw;
+    }
+
+    /* título */
+    .fale-conosco > div.fale-conosco-titulos > h1 {
+        font-size: clamp(2.1rem, 4vw, 2.8rem);
+        padding: 2vw 4vw;
+    }
+
+    .fale-conosco > div.fale-conosco-titulos > p {
+        font-size: clamp(0.7rem, 1.9vw, 1.2rem);
+        padding: 4vw;
+        width: fit-content;
+    }
+
+    /* GRID DE CONTATOS (AQUI estava o problema antes) */
+    .div-lista-contatos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* itens */
+    .contato-item {
+        display: flex;
+        width: fit-content;
+        margin: 0vw 0vw 2vw 4vw;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        font-size: clamp(1rem, 2.8vw, 1.5rem);
+    }
+
+    /* ícones */
+    .contato-icon {
+        color: #fff;
+        font-size: clamp(1rem, 30px, 3rem);
+    }
+
+   }
