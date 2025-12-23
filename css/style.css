@@ -491,13 +491,15 @@ section.CECDIC > p {
 
     .fale-conosco > div.fale-conosco-titulos {
         display: flex;
+        margin-bottom: 1vw;
         justify-content: space-between;
+        align-items: center;
     }
 
     /* título */
     .fale-conosco > div.fale-conosco-titulos > h1 {
         font-family: 'Bitter', serif;
-        font-size: clamp(1.8rem, 3.6vw, 2.3rem);
+        font-size: clamp(1.6rem, 3.4vw, 2.1rem);
         padding: 4vw;
         width: fit-content;
     }
@@ -522,13 +524,13 @@ section.CECDIC > p {
         align-items: center;
         gap: 10px;
         font-weight: 700;
-        font-size: clamp(1rem, 2.8vw, 1.5rem);
+        font-size: clamp(0.9rem, 2.7vw, 1.4rem);
     }
 
     /* ícones */
     .contato-icon {
         color: #fff;
-        font-size: clamp(1rem, 30px, 3rem);
+        font-size: clamp(0.5rem, 25px, 3rem);
     }
 
 
@@ -672,10 +674,17 @@ header {
         padding: 1vw 0vw;
     }
 
+    .fale-conosco > div.fale-conosco-titulos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     /* título */
     .fale-conosco > div.fale-conosco-titulos > h1 {
         font-size: clamp(2.1rem, 4vw, 2.8rem);
-        padding: 2vw 4vw;
+        margin: 2vw 4vw;
+        padding: 0;
     }
 
     .fale-conosco > div.fale-conosco-titulos > p {
