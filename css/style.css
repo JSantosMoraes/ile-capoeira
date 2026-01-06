@@ -426,13 +426,18 @@ section.CECDIC > p {
     color: white;
 }
 
-.section-texto > .titulo-direita {
+.titulo-direita {
     font-size: clamp(1.4rem, 4vw, 3rem);
     margin-right: 4vw;
     margin-top: 4vw;
     margin-bottom: 3vw;
     font-family: 'bitter';
     color: #E67A15;
+}
+
+.alinhamento-texto-imagem-direita {
+    display: block;
+    margin: 4vw;
 }
 
 .section-texto > .div-texto-direita {
@@ -450,9 +455,8 @@ section.CECDIC > p {
 }
 
 
-.section-texto > .div-texto-direita > p {
-    width: 36%;
-    margin: auto;
+.section-texto > .div-texto-direita > .alinhamento-texto-imagem-direita > p {
+    margin: 4vw 0;
     font-size: clamp(0.8rem, 2.5vw, 2rem);
     color: white;
     text-align: left;
@@ -480,7 +484,7 @@ section.fale-conosco {
 
     color: white;
     width: 100%;
-    margin: 4vw 0;
+    margin: 4vw 0vw;
 
     /* 👇 NÃO força altura no mobile */
     min-height: auto;
@@ -557,6 +561,22 @@ section.fale-conosco {
     object-fit: cover;    /* evita deformar a imagem */
     border-radius: 2px;
     margin-right: 5vw;
+}
+
+/* =========================================================
+    NOSSO PROPÓSITO
+========================================================= */
+
+#section-nosso-proposito {
+    margin: 4vw 0;
+}
+
+#section-nosso-proposito > .div-texto-esquerda > img {
+    width: 45vw;
+    aspect-ratio: 1.2 / 1;   /* força formato quadrado */
+    object-fit: cover;    /* evita deformar a imagem */
+    border-radius: 2px;
+    margin-left: 4vw;
 }
 
 
