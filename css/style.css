@@ -282,7 +282,7 @@ section.CECDIC {
     width: 100%;
 
     /* ALTURA MAIS ESTÁVEL */
-    min-height: clamp(100px, 27vh, 300px);
+    min-height: auto;
 
     /* CENTRALIZAÇÃO REAL */
     display: flex;
@@ -297,17 +297,19 @@ section.CECDIC > div {
 }
 
 section.CECDIC > div > h1 > img {
-    width: clamp(80px, 13vw, 90px);
-    height: clamp(80px, 13vw, 90px);
+    width: clamp(20px, 11vw, 90px);
+    height: clamp(20px, 11vw, 90px);
+        padding-right: 10px;
 }
 
 section.CECDIC > div > h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 4vw;
 
     font-family: 'Bitter', serif;
-    font-size: clamp(1.1rem, 2.9vw, 1.6rem);
+    font-size: clamp(1rem, 2.8vw, 1.5rem);
 
     /* REMOVE empurrão manual */
     margin: 0;
@@ -318,6 +320,7 @@ section.CECDIC > div > h1 {
 section.CECDIC > p {
     width: 100%;
     margin-top: 15px;
+    padding-bottom: 4vw;
 
     font-size: clamp(0.7rem, 1.6vw, 1rem);
     text-align: center;
@@ -333,7 +336,7 @@ section.CECDIC > p {
 }
 
 .section-texto > .titulo-esquerda {
-    font-size: clamp(1.4rem, 3.2vw, 2.3rem);
+    font-size: clamp(1.4rem, 4vw, 3rem);
     margin-left: 4vw;
     margin-top: 7vw;
     margin-bottom: 2vw;
@@ -359,7 +362,7 @@ section.CECDIC > p {
 .section-texto > .div-texto-esquerda > p {
     width: 36%;
     margin: auto;
-    font-size: clamp(0.8rem, 2.5vw, 1.6rem);
+    font-size: clamp(0.8rem, 2.5vw, 2rem);
     color: white;
     text-align: left;
     line-height: 1.5;
@@ -424,7 +427,7 @@ section.CECDIC > p {
 }
 
 .section-texto > .titulo-direita {
-    font-size: clamp(1.4rem, 3.2vw, 1.9rem);
+    font-size: clamp(1.4rem, 4vw, 3rem);
     margin-right: 4vw;
     margin-top: 4vw;
     margin-bottom: 3vw;
@@ -450,7 +453,7 @@ section.CECDIC > p {
 .section-texto > .div-texto-direita > p {
     width: 36%;
     margin: auto;
-    font-size: clamp(0.8rem, 2.5vw, 1.6rem);
+    font-size: clamp(0.8rem, 2.5vw, 2rem);
     color: white;
     text-align: left;
     line-height: 1.5;
@@ -494,7 +497,6 @@ section.fale-conosco {
 
     .fale-conosco > div.fale-conosco-titulos {
         display: flex;
-        margin-bottom: 1vw;
         justify-content: space-between;
         align-items: center;
     }
@@ -523,18 +525,39 @@ section.fale-conosco {
     .contato-item {
         display: flex;
         width: fit-content;
-        margin: 0vw 0vw 4vw 4vw;
+        margin: 0vw 0vw 2vw 4vw;
         align-items: center;
         gap: 10px;
         font-weight: 700;
         font-size: clamp(0.9rem, 2.7vw, 1.4rem);
     }
 
+    #item-contato-bottom1 {
+        margin: 0vw 0vw 4vw 4vw;
+    }
+
+    #item-contato-bottom2 {
+        margin: 0vw 0vw 4vw 4vw;
+    }
+
+
     /* ícones */
     .contato-icon {
         color: #fff;
         font-size: clamp(0.5rem, 25px, 3rem);
     }
+
+/* =========================================================
+    MAIS SOBRE NÓS
+========================================================= */
+
+#imagem-sobre-nos {
+    width: 45vw;
+    height: 60vw;  /* força formato quadrado */
+    object-fit: cover;    /* evita deformar a imagem */
+    border-radius: 2px;
+    margin-right: 5vw;
+}
 
 
 /* =========================================================
