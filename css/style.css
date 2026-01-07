@@ -571,6 +571,10 @@ section.fale-conosco {
     margin: 4vw 0;
 }
 
+#section-nosso-proposito > h1 {
+    padding-bottom: 2vw;
+}
+
 #section-nosso-proposito > .div-texto-esquerda > img {
     width: 45vw;
     aspect-ratio: 1.2 / 1;   /* força formato quadrado */
@@ -578,6 +582,70 @@ section.fale-conosco {
     border-radius: 2px;
     margin-left: 4vw;
 }
+
+/* =========================================================
+    MESTRE CHIBA
+========================================================= */
+
+#section-mestre-chiba > h1 {
+    margin-bottom: 1vw;
+}
+
+#section-mestre-chiba > p {
+    margin-left: 4vw;
+    margin-bottom: 2vw;
+    font-family: 'Bitter', serif;
+    color: #E67A15;
+}
+
+.ile-90w {
+    display: block;
+    margin-left: 4vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    width: 90vw;
+    height: 40vw;
+    background-image: url('../assets/images/ilereal.png');
+    background-position: center center;
+}
+
+#section-mestre-chiba > .div-texto-esquerda > img {
+    width: 45vw;
+    aspect-ratio: 1 / 0.7;   /* força formato quadrado */
+    object-fit: cover;    /* evita deformar a imagem */
+    border-radius: 2px;
+    margin-left: 4vw;
+    
+}
+
+.texto-veratividades {
+    margin-top: 1vw;
+}
+
+#section-mestre-chiba > #parallax1 {
+    background-image: url('../assets/images/ilereal.png');
+}
+
+#section-mestre-chiba > #parallax2 {
+    background-image: url('../assets/images/ilereal.png');
+    margin-left: auto;      /* <<< TROCA SIMPLES */
+    margin-right: 4vw;      /* <<< TROCA SIMPLES */
+}
+
+.parallax-effect {
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    width: 75vw;            /* <<< só valor */
+    margin-left: 4vw;
+    margin-bottom: 2vw;
+
+    aspect-ratio: 1 / 1;
+
+    background-size: cover; /* <<< valor certo */
+    background-attachment: fixed;
+}
+
 
 
 /* =========================================================
@@ -763,3 +831,32 @@ header {
     }
 
    }
+
+   /* =========================================================
+    MESTRE CHIBA DESKTOP (DESKTOP)
+   ========================================================= */
+
+   @media screen and (min-width: 992px){
+
+    .parallax-effect {
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    width: 75vw;              /* mobile / base */
+    margin-left: 4vw;
+    margin-bottom: 2vw;
+
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* PC / telas maiores */
+@media (min-width: 1024px) {
+    .parallax-effect {
+        width: 60vw;          /* <<< diminui no desktop */
+        max-width: 720px;     /* <<< trava crescimento */
+    }
+}
+
+}
