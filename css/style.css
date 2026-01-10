@@ -574,6 +574,11 @@ section.fale-conosco {
 
 #section-nosso-proposito > .div-texto-esquerda {
     background-color: black;
+    padding: 0;
+}
+
+#section-nosso-proposito > .div-texto-esquerda > p {
+    background-color: white;
 }
 
 #section-nosso-proposito > h1 {
