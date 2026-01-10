@@ -646,11 +646,13 @@ section.fale-conosco {
     background-attachment: fixed;
 }
 
-#img-esquerda-chiba {
-margin-top: 1vw;
-margin-bottom: 1vw;
+#section-mestre-chiba > .div-texto-esquerda > img {
+    width: 50vw;
+    height: 32vw;   /* força formato quadrado */
+    object-fit: cover;    /* evita deformar a imagem */
+    border-radius: 2px;
+    margin-left: 4vw;
 }
-
 
 
 /* =========================================================
