@@ -572,7 +572,7 @@ section.fale-conosco {
 }
 
 #section-nosso-proposito > h1 {
-    padding-bottom: 2vw;
+    padding-bottom: 0vw;
 }
 
 #section-nosso-proposito > .div-texto-esquerda > img {
@@ -644,6 +644,11 @@ section.fale-conosco {
 
     background-size: cover; /* <<< valor certo */
     background-attachment: fixed;
+}
+
+#img-esquerda-chiba {
+margin-top: 1vw;
+margin-bottom: 1vw;
 }
 
 
