@@ -574,7 +574,8 @@ section.fale-conosco {
 
 #section-nosso-proposito > .div-texto-esquerda {
     background-color: black;
-    padding: 0;
+    min-height: auto;          /* remove o espaço forçado */
+    align-items: flex-start;   /* evita centralização vertical */
 }
 
 #section-nosso-proposito > .div-texto-esquerda > p {
