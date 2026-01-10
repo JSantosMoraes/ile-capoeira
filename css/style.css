@@ -602,7 +602,7 @@ section.fale-conosco {
     display: block;
     margin-left: 4vw;
     margin-top: 2vw;
-    margin-bottom: 1vw;
+    margin-bottom: 0vw;
     width: 90vw;
     height: 40vw;
     background-image: url('../assets/images/ilereal.png');
@@ -652,6 +652,7 @@ section.fale-conosco {
     object-fit: cover;    /* evita deformar a imagem */
     border-radius: 2px;
     margin-left: 4vw;
+    margin-top: 1vw;
 }
 
 
