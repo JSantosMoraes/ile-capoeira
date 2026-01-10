@@ -569,10 +569,16 @@ section.fale-conosco {
 
 #section-nosso-proposito {
     margin: 4vw 0;
+    background-color: blue;
+}
+
+#section-nosso-proposito > .div-texto-esquerda {
+    background-color: black;
 }
 
 #section-nosso-proposito > h1 {
-    padding-bottom: 0vw;
+    margin: 1vw auto 1vw 2vw;
+    background-color: yellow;
 }
 
 #section-nosso-proposito > .div-texto-esquerda > img {
