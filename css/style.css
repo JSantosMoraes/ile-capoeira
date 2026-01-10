@@ -569,22 +569,16 @@ section.fale-conosco {
 
 #section-nosso-proposito {
     margin: 4vw 0;
-    background-color: blue;
 }
 
 #section-nosso-proposito > .div-texto-esquerda {
-    background-color: black;
     min-height: auto;          /* remove o espaço forçado */
     align-items: flex-start;   /* evita centralização vertical */
 }
 
-#section-nosso-proposito > .div-texto-esquerda > p {
-    background-color: white;
-}
-
 #section-nosso-proposito > h1 {
-    margin: 1vw auto 1vw 2vw;
-    background-color: yellow;
+    margin: 1vw auto 2vw 4vw;
+
 }
 
 #section-nosso-proposito > .div-texto-esquerda > img {
