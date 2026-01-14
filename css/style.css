@@ -373,7 +373,7 @@ section.CECDIC > p {
 
 .texto-veratividades {
     width: 90vw;
-    margin: 3vw 4vw; /* distancia entre os elementos */
+    margin: 1vw 4vw; /* distancia entre os elementos */
 
     background-image:
         linear-gradient(
@@ -658,6 +658,102 @@ section.fale-conosco {
     background-size: cover; /* <<< valor certo */
     background-attachment: fixed;
 }
+
+/* =========================================================
+    FOOTER
+   ========================================================= */
+
+   footer {
+    background-color: #E67A15;
+    width: 100%;
+   }
+
+   footer > hr {
+    width: 95vw;
+    height: 2px;
+    margin: 10px auto;
+   }
+
+   .section-ajuda {
+    width: 95%;
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 1vw;
+    font-size: clamp(0.8rem, 3.4vw, 1.5rem);
+   }
+
+   .ajuda {
+    font-size: clamp(0.8rem, 3.4vw, 1.5rem);
+    color: white;
+    padding: 0vw 2vw;
+    text-decoration: none;
+   }
+
+    .imagens-iniciais-footer {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 2vw 4vw;
+    }
+
+   .logo-ile-footer {
+    display: block;
+    width: clamp(50px, 10vw, 100px);
+    height: clamp(50px, 10vw, 100px);
+   }
+
+   footer > .imagens-iniciais-footer > .nossos-parceiros {
+    background-color: #E67A15;
+   }
+
+   footer > .imagens-iniciais-footer > .nossos-parceiros > p {
+    font-size: clamp(0.6rem, 2vw, 1rem);
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5vw;
+   }
+
+   footer > .imagens-iniciais-footer > .nossos-parceiros > .background-branco-footer {
+    background-color: white;
+    width: fit-content;
+    border-radius: 5%;
+   }
+
+   footer > .imagens-iniciais-footer > .nossos-parceiros > .background-branco-footer > img {
+    width: clamp(30px, 8vw, 70px);
+    height: clamp(30px, 8vw, 70px);
+   }
+
+   .lista-footer {
+    color: white;
+    margin: 0;
+    padding: 0 4vw;
+    list-style: none;
+    display: inline-block;
+   }
+
+   .lista-footer > h1 {
+    font-size: clamp(0.8rem, 3.4vw, 1.5rem);
+    margin-bottom: 1vw;
+    font-weight: 700;
+   }
+
+   .lista-footer > li {
+    margin-bottom: 0.5vw;
+   }
+
+   .lista-footer > li > a {
+    margin-bottom: 1vw;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(0.1rem, 2.4vw, 1rem);
+    font-weight: 400;
+   }
+
+
 
 
 /* =========================================================
