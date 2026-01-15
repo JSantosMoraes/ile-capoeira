@@ -753,6 +753,56 @@ section.fale-conosco {
     font-weight: 400;
    }
 
+   .footer-fale-conosco {
+    padding: 0vw 4vw;
+    padding-top: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+    .footer-fale-conosco > h1 {
+    font-size: clamp(0.8rem, 3.4vw, 1.5rem);
+    margin-bottom: 1vw;
+    font-weight: 600;
+    color: white;
+   }
+
+   .footer-fale-conosco > p {
+    font-size: clamp(0.1rem, 2.4vw, 1rem);
+    font-weight: 400;
+    color: white;
+   }
+
+   .footer-icons-contatos {
+    padding: 0vw 4vw;
+   }
+
+   .footer-icons-contatos > i {
+    padding-right: 1vw;
+
+   }
+
+   .footer-info-final {
+    padding: 1vw 4vw;
+    color: white;
+   }
+
+   .footer-info-final > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: clamp(0.1rem, 2.4vw, 1.2rem);
+   }
+
+   .footer-info-final > p {
+    font-size: clamp(0.1rem, 2.4vw, 1rem);
+    font-weight: 400;
+    text-align: center;
+    padding-top: 2vw;
+
+   }
+
 
 
 
