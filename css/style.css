@@ -337,7 +337,7 @@ section.CECDIC > p {
 }
 
 .section-texto > .titulo-esquerda {
-    font-size: clamp(1.4rem, 4vw, 3rem);
+    font-size: clamp(1.4rem, 4vw, 2.5rem);
     margin-left: 4vw;
     margin-top: 7vw;
     margin-bottom: 2vw;
@@ -363,7 +363,7 @@ section.CECDIC > p {
 .section-texto > .div-texto-esquerda > p {
     width: 36%;
     margin: auto;
-    font-size: clamp(0.8rem, 2.5vw, 2rem);
+    font-size: clamp(0.8rem, 2.5vw, 1.5rem);
     color: white;
     text-align: left;
     line-height: 1.5;
@@ -428,7 +428,7 @@ section.CECDIC > p {
 }
 
 .titulo-direita {
-    font-size: clamp(1.4rem, 4vw, 3rem);
+    font-size: clamp(1.4rem, 4vw, 2.5rem);
     margin-right: 4vw;
     margin-top: 4vw;
     margin-bottom: 3vw;
@@ -458,7 +458,7 @@ section.CECDIC > p {
 
 .section-texto > .div-texto-direita > .alinhamento-texto-imagem-direita > p {
     margin: 4vw 0;
-    font-size: clamp(0.8rem, 2.5vw, 2rem);
+    font-size: clamp(0.8rem, 2.5vw, 1.5rem);
     color: white;
     text-align: left;
     line-height: 1.5;
