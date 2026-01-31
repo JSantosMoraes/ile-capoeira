@@ -610,7 +610,7 @@ section.fale-conosco {
     margin-left: 4vw;
     margin-top: 2vw;
     width: 90vw;
-    height: 40vw;
+    height: 35vw;
     background-image: url('../assets/images/ilereal.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -803,6 +803,27 @@ section.fale-conosco {
 
    }
 
+/* =========================================================
+    (ABOUT-US) NOSSA HISTÓRIA
+========================================================= */
+
+#section-nossa-historia {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+#section-nossa-historia > .ile-90w {
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+
+#imagem1-nossa-historia {
+    width: 40vw;
+    height: 40vw;  /* força formato quadrado */
+    object-fit: cover;    /* evita deformar a imagem */
+    border-radius: 2px;
+    margin-right: 5vw;
+}
 
 
 
