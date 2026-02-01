@@ -509,13 +509,13 @@ section.fale-conosco {
     /* título */
     .fale-conosco > div.fale-conosco-titulos > h1 {
         font-family: 'Bitter', serif;
-        font-size: clamp(1.5rem, 3.4vw, 2.1rem);
+        font-size: clamp(1.2rem, 3.4vw, 2.2rem);
         padding: 4vw;
         width: fit-content;
     }
 
     .fale-conosco > div.fale-conosco-titulos > p {
-        font-size: clamp(0.6rem, 1.9vw, 1.2rem);
+        font-size: clamp(0.2rem, 1.8vw, 1.2rem);
         padding: 4vw;
         width: fit-content;
     }
@@ -530,7 +530,7 @@ section.fale-conosco {
     .contato-item {
         display: flex;
         width: fit-content;
-        margin: 0vw 0vw 2vw 4vw;
+        margin: 0vw 0vw 4vw 4vw;
         align-items: center;
         gap: 10px;
         font-weight: 700;
@@ -549,7 +549,7 @@ section.fale-conosco {
     /* ícones */
     .contato-icon {
         color: #fff;
-        font-size: clamp(0.5rem, 25px, 3rem);
+        font-size: clamp(0.5rem, 20px, 4rem);
     }
 
 /* =========================================================
@@ -813,17 +813,26 @@ section.fale-conosco {
 }
 
 #section-nossa-historia > .ile-90w {
-    margin-bottom: 2vw;
-    margin-top: 2vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+#section-nossa-historia .alinhamento-texto-imagem-direita {
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 #imagem1-nossa-historia {
-    width: 40vw;
+    width: 45vw;
     height: 40vw;  /* força formato quadrado */
     object-fit: cover;    /* evita deformar a imagem */
     border-radius: 2px;
     margin-right: 5vw;
 }
+
+/* =========================================================
+    (ABOUT-US) NOSSA MISSÃO
+========================================================= */
 
 
 
@@ -1000,13 +1009,13 @@ header {
         align-items: center;
         gap: 10px;
         font-weight: 700;
-        font-size: clamp(1rem, 2.8vw, 1.5rem);
+        font-size: clamp(1rem, 2vw, 1.6rem);
     }
 
     /* ícones */
     .contato-icon {
         color: #fff;
-        font-size: clamp(1rem, 30px, 3rem);
+        font-size: clamp(1rem, 45px, 3rem);
     }
 
    }
