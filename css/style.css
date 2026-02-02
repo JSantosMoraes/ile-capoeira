@@ -37,6 +37,12 @@ body {
     overflow-x: hidden;
 }
 
+.container-central {
+  max-width: clamp(320px, 85%, 1200px);
+  margin: 0 auto;
+}
+
+
 /* =========================================================
    HERO SECTION / TELA INICIAL (#inib)
    ========================================================= */
@@ -337,8 +343,8 @@ section.CECDIC > p {
 }
 
 .section-texto > .titulo-esquerda {
-    font-size: clamp(1.4rem, 4vw, 2.5rem);
-    margin-left: 4vw;
+    font-size: clamp(1.3rem, 2.6vw, 2rem);
+    margin-left: 0vw;
     margin-top: 7vw;
     margin-bottom: 2vw;
     font-family: 'bitter';
@@ -347,23 +353,25 @@ section.CECDIC > p {
 
 .section-texto > .div-texto-esquerda {
     display: flex;
-    align-items: center;
+    align-items: top;
+    justify-content: center;
     min-height: clamp(100px, 27vh, 300px);
 }
 
 .section-texto > .div-texto-esquerda > img {
-    width: 45vw;
+    width: 40vw;
     aspect-ratio: 1 / 1;   /* força formato quadrado */
     object-fit: cover;    /* evita deformar a imagem */
     border-radius: 2px;
-    margin-left: 4vw;
+    margin-left: 0vw;
 }
 
 
 .section-texto > .div-texto-esquerda > p {
-    width: 36%;
+    width: 100%;
+    padding: 5%;
     margin: auto;
-    font-size: clamp(0.8rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.75rem, 1.4vw, 1.15rem);
     color: white;
     text-align: left;
     line-height: 1.5;
@@ -372,8 +380,8 @@ section.CECDIC > p {
 }
 
 .texto-veratividades {
-    width: 90vw;
-    margin: 1vw 4vw; /* distancia entre os elementos */
+    max-width: 85vw;
+    margin: 0vw 0vw; /* distancia entre os elementos */
 
     background-image:
         linear-gradient(
@@ -396,8 +404,8 @@ section.CECDIC > p {
 
 .texto-veratividades > p {
     width: 50%;
-    margin: 4vw;
-    font-size: clamp(0.7rem, 2.4vw, 1.5rem);
+    margin: 5vw;
+    font-size: clamp(0.7rem, 1.5vw, 1.1rem);
     color: white;
     text-align: left;
     color: white;
@@ -409,9 +417,9 @@ section.CECDIC > p {
     color: #E67A15;
     background-color: white;
     text-decoration: none;
-    width: 30%;
+    width: 25%;
     height: 10%;
-    font-size: clamp(0.6rem, 2.3vw, 1.4rem);
+    font-size: clamp(0.75rem, 1.2vw, 1rem);
     padding: 10px;
     font-weight: 700;
     display: flex;
@@ -428,8 +436,8 @@ section.CECDIC > p {
 }
 
 .titulo-direita {
-    font-size: clamp(1.4rem, 4vw, 2.5rem);
-    margin-right: 4vw;
+    font-size: clamp(1.3rem, 2.6vw, 2rem);
+    margin-right: 0vw;
     margin-top: 4vw;
     margin-bottom: 3vw;
     font-family: 'bitter';
@@ -438,27 +446,33 @@ section.CECDIC > p {
 
 .alinhamento-texto-imagem-direita {
     display: block;
-    margin: 4vw;
+    margin-right: 4vw;
 }
 
 .section-texto > .div-texto-direita {
     display: flex;
-    align-items: center;
+    align-items: top;
+    margin-top: 1vw;
+    justify-content: center;
     min-height: clamp(100px, 27vh, 300px);
 }
 
 .section-texto > .div-texto-direita > img {
-    width: 45vw;
+    width: 40vw;
     aspect-ratio: 1 / 1;   /* força formato quadrado */
     object-fit: cover;    /* evita deformar a imagem */
     border-radius: 2px;
-    margin-right: 5vw;
+    margin-right: 0vw;
+}
+
+.middle-p{
+    margin: 30% 0;
 }
 
 
+
 .section-texto > .div-texto-direita > .alinhamento-texto-imagem-direita > p {
-    margin: 4vw 0;
-    font-size: clamp(0.8rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.75rem, 1.4vw, 1.15rem);
     color: white;
     text-align: left;
     line-height: 1.5;
@@ -556,12 +570,18 @@ section.fale-conosco {
     MAIS SOBRE NÓS
 ========================================================= */
 
+#section-mais-sobre-nos > .div-texto-direita {
+    display: flex;
+    align-items: center;
+}
+
 #imagem-sobre-nos {
-    width: 45vw;
-    height: 60vw;  /* força formato quadrado */
+    width: 40vw;
+    margin-left: 0;
+    height: 45vw;  /* força formato quadrado */
     object-fit: cover;    /* evita deformar a imagem */
     border-radius: 2px;
-    margin-right: 5vw;
+    margin-right: 0vw;
 }
 
 /* =========================================================
@@ -569,7 +589,7 @@ section.fale-conosco {
 ========================================================= */
 
 #section-nosso-proposito {
-    margin: 4vw 0;
+    margin: 7vw 0;
 }
 
 #section-nosso-proposito > .div-texto-esquerda {
@@ -578,16 +598,16 @@ section.fale-conosco {
 }
 
 #section-nosso-proposito > h1 {
-    margin: 1vw auto 2vw 4vw;
+    margin: 1vw auto 2vw 0vw;
 
 }
 
 #section-nosso-proposito > .div-texto-esquerda > img {
-    width: 45vw;
-    aspect-ratio: 1.2 / 1;   /* força formato quadrado */
+    width: 40vw;
+    aspect-ratio: 1 / 1;   /* força formato quadrado */
     object-fit: cover;    /* evita deformar a imagem */
     border-radius: 2px;
-    margin-left: 4vw;
+    margin-left: 0vw;
 }
 
 /* =========================================================
@@ -599,7 +619,6 @@ section.fale-conosco {
 }
 
 #section-mestre-chiba > p {
-    margin-left: 4vw;
     margin-bottom: 2vw;
     font-family: 'Bitter', serif;
     color: #E67A15;
@@ -607,9 +626,8 @@ section.fale-conosco {
 
 .ile-90w {
     display: block;
-    margin-left: 4vw;
     margin-top: 2vw;
-    width: 90vw;
+    max-width: 85vw;
     height: 35vw;
     background-image: url('../assets/images/ilereal.png');
     background-repeat: no-repeat;
@@ -618,11 +636,11 @@ section.fale-conosco {
 }
 
 #section-mestre-chiba > .div-texto-esquerda > img {
-    width: 45vw;
-    aspect-ratio: 1 / 0.7;   /* força formato quadrado */
+    width: 40vw;
+    aspect-ratio: 1 / 1;   /* força formato quadrado */
     object-fit: cover;    /* evita deformar a imagem */
     border-radius: 2px;
-    margin-left: 4vw;
+    margin-left: 0vw;
     margin-top: 1vw;
 }
 
@@ -636,22 +654,23 @@ section.fale-conosco {
 }
 
 #section-mestre-chiba > #parallax1 {
+    margin-top: 1vw;
     background-image: url('../assets/images/ilereal.png');
 }
 
 #section-mestre-chiba > #parallax2 {
     background-image: url('../assets/images/ilereal.png');
     margin-left: auto;      /* <<< TROCA SIMPLES */
-    margin-right: 4vw;      /* <<< TROCA SIMPLES */
+    margin-right: 0vw;      /* <<< TROCA SIMPLES */
 }
 
 .parallax-effect {
     background-position: center center;
     background-repeat: no-repeat;
 
-    width: 75vw;            /* <<< só valor */
-    margin-left: 4vw;
-    margin-bottom: 2vw;
+    max-width: 75vw;          /* <<< só valor */
+    margin-left: 0vw;
+    margin-bottom: 1vw;
 
     aspect-ratio: 1 / 1;
 
@@ -666,6 +685,7 @@ section.fale-conosco {
    footer {
     background-color: #E67A15;
     width: 100%;
+    margin-top: 4vw;
    }
 
    footer > hr {
@@ -682,7 +702,7 @@ section.fale-conosco {
     align-items: center;
     justify-content: space-between;
     padding: 0vw 1vw;
-    font-size: clamp(0.8rem, 3.4vw, 1.5rem);
+    font-size: clamp(0.8rem, 3.5vw, 2rem);
    }
 
    .ajuda {
@@ -780,7 +800,7 @@ section.fale-conosco {
 
    .footer-icons-contatos > i {
     padding-right: 1vw;
-
+    font-size: 2vw;
    }
 
    .footer-info-final {
@@ -817,6 +837,12 @@ section.fale-conosco {
     margin-top: 1vw;
 }
 
+
+#section-nossa-historia > .div-texto-direita {
+    display: flex;
+    align-items: center;
+}
+
 #section-nossa-historia .alinhamento-texto-imagem-direita {
     margin-bottom: 0;
     margin-top: 0;
@@ -824,10 +850,9 @@ section.fale-conosco {
 
 #imagem1-nossa-historia {
     width: 45vw;
-    height: 40vw;  /* força formato quadrado */
+    aspect-ratio: 1 / 1.5;   /* força formato quadrado */
     object-fit: cover;    /* evita deformar a imagem */
     border-radius: 2px;
-    margin-right: 5vw;
 }
 
 /* =========================================================
@@ -897,7 +922,7 @@ section.fale-conosco {
     color: white;
     text-align: center;
     padding-bottom: 10px;
-    font-size: clamp(1rem, 4vw, 5vw); /* <<<<<<<<<<<<<<<< */
+    font-size: clamp(1.4rem, 3vw, 3.2rem); /* <<<<<<<<<<<<<<<< */
     font-family: 'Bitter';
 }
 
@@ -926,7 +951,7 @@ header {
 @media screen and (min-width: 992px){
     
 .section-esquerda > .titulo-esquerda {
-    font-size: clamp(2rem, 3.6vw, 2.4rem);
+    font-size: clamp(1.3rem, 2.6vw, 2rem);
 }
 
 .section-esquerda > .div-texto-esquerda > img {
@@ -984,14 +1009,14 @@ header {
 
     /* título */
     .fale-conosco > div.fale-conosco-titulos > h1 {
-        font-size: clamp(2.1rem, 4vw, 2.8rem);
+        font-size: clamp(1.6rem, 3.5vw, 2.3rem);
         margin: 2vw 4vw;
         padding: 0;
     }
 
     .fale-conosco > div.fale-conosco-titulos > p {
         font-size: clamp(0.7rem, 1.9vw, 1.2rem);
-        padding: 4vw;
+        padding: 2vw;
         width: fit-content;
     }
 
@@ -1009,13 +1034,13 @@ header {
         align-items: center;
         gap: 10px;
         font-weight: 700;
-        font-size: clamp(1rem, 2vw, 1.6rem);
+        font-size: clamp(0.9rem, 1.4vw, 1.2rem);
     }
 
     /* ícones */
     .contato-icon {
         color: #fff;
-        font-size: clamp(1rem, 45px, 3rem);
+        font-size: clamp(1rem, 30px, 2.5rem);
     }
 
    }
