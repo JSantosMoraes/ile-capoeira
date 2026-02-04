@@ -655,6 +655,7 @@ section.fale-conosco {
 
 #section-mestre-chiba > #parallax1 {
     margin-top: 1vw;
+    margin-left: 0;
     background-image: url('../assets/images/ilereal.png');
 }
 
@@ -823,8 +824,15 @@ section.fale-conosco {
 
    }
 
+
+
+
+   /*SOBRE NÓS START*/
+
+
+
 /* =========================================================
-    (ABOUT-US) NOSSA HISTÓRIA
+    NOSSA HISTÓRIA
 ========================================================= */
 
 #section-nossa-historia {
@@ -856,8 +864,13 @@ section.fale-conosco {
 }
 
 /* =========================================================
-    (ABOUT-US) NOSSA MISSÃO
+   NOSSA MISSÃO
 ========================================================= */
+
+
+
+
+/*SOBRE NÓS END*/
 
 
 
